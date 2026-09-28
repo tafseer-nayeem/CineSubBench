@@ -1,7 +1,5 @@
 # CineSubBench
 
-<p><a href="https://huggingface.co/datasets/tafseer-nayeem/CineSubBench"><img src="https://huggingface.co/front/assets/huggingface_logo-noborder.svg" alt="Hugging Face" height="24" align="center"> <strong>tafseer-nayeem/CineSubBench</strong></a> · Complete dataset on Hugging Face</p>
-
 CineSubBench evaluates whether language models can reconstruct a film's story and make culturally situated judgments from film-length subtitles. Its 1,012 films have complete coverage in six subtitle languages and ten national motion-picture rating systems: 6,072 tracks and 8.13 million timestamped entries. The same films support matched comparisons across tasks, languages, and countries.
 
 <p align="center"><a href="assets/figure1_overview.jpg"><img src="assets/figure1_overview.jpg" alt="Figure 1. CineSubBench overview: film-length subtitle input, six languages, and seven narrative and cultural tasks." width="540"></a></p>
@@ -18,8 +16,7 @@ Subtitle timestamps preserve order, but do not identify speakers, scenes, events
 The first six tasks can be compared across subtitle languages; language-safety evidence is evaluated on the English track. This repository contains the evaluation code, OpenAI/Gemini/Anthropic adapters, prompts, schemas, and a 20-film sample. The complete dataset is on Hugging Face.
 
 ## Dataset
-
-**[Open the complete CineSubBench dataset on Hugging Face](https://huggingface.co/datasets/tafseer-nayeem/CineSubBench).**
+<p><a href="https://huggingface.co/datasets/tafseer-nayeem/CineSubBench"><img src="https://huggingface.co/front/assets/huggingface_logo-noborder.svg" alt="Hugging Face" height="24" align="center"> <strong>tafseer-nayeem/CineSubBench</strong></a> · Complete dataset on Hugging Face</p>
 
 Load the complete benchmark directly from Hugging Face:
 
