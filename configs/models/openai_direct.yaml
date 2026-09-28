@@ -1,0 +1,11 @@
+name: GPT-5 Nano
+provider: openai
+model_id: gpt-5-nano
+credentials:
+  env_var: OPENAI_API_KEY
+execution:
+  mode: direct
+  workers: 1
+  timeout_seconds: 300
+  max_retries: 3
+

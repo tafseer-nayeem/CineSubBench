@@ -1,0 +1,214 @@
+{
+  "name": "cinesubbench_narrative_judge_output",
+  "strict": true,
+  "schema": {
+    "type": "object",
+    "properties": {
+      "id": {
+        "type": "integer",
+        "description": "CineSubBench sample id."
+      },
+      "plotEvaluation": {
+        "$ref": "#/$defs/plotEvaluation"
+      },
+      "synopsisEvaluation": {
+        "$ref": "#/$defs/synopsisEvaluation"
+      },
+      "keyMessageEvaluation": {
+        "$ref": "#/$defs/keyMessageEvaluation"
+      }
+    },
+    "required": [
+      "id",
+      "plotEvaluation",
+      "synopsisEvaluation",
+      "keyMessageEvaluation"
+    ],
+    "additionalProperties": false,
+    "$defs": {
+      "score": {
+        "type": "integer",
+        "minimum": 1,
+        "maximum": 5
+      },
+      "plotErrorType": {
+        "type": "string",
+        "enum": [
+          "missingCentralConflict",
+          "missingProtagonistOrGroup",
+          "wrongSetup",
+          "wrongRelationship",
+          "inventedEvent",
+          "wrongEmphasis",
+          "tooVague",
+          "tooDetailed",
+          "styleOrLengthIssue",
+          "none"
+        ]
+      },
+      "synopsisErrorType": {
+        "type": "string",
+        "enum": [
+          "missingMajorEvent",
+          "missingResolution",
+          "wrongResolution",
+          "weakCausality",
+          "missingCharacterMotivation",
+          "wrongRelationship",
+          "inventedEvent",
+          "wrongEventOrder",
+          "tooVague",
+          "tooDetailed",
+          "styleOrLengthIssue",
+          "none"
+        ]
+      },
+      "keyMessageErrorType": {
+        "type": "string",
+        "enum": [
+          "semanticMismatch",
+          "tooGeneric",
+          "tooPlotLike",
+          "missesPositiveMessage",
+          "contradictedByReference",
+          "unsupportedTheme",
+          "styleOrLengthIssue",
+          "none"
+        ]
+      },
+      "plotEvaluation": {
+        "type": "object",
+        "properties": {
+          "factualAlignment": {
+            "$ref": "#/$defs/score"
+          },
+          "premiseCoverage": {
+            "$ref": "#/$defs/score"
+          },
+          "conciseness": {
+            "$ref": "#/$defs/score"
+          },
+          "hallucinationControl": {
+            "$ref": "#/$defs/score"
+          },
+          "overall": {
+            "$ref": "#/$defs/score"
+          },
+          "rationale": {
+            "type": "string"
+          },
+          "errorTypes": {
+            "type": "array",
+            "items": {
+              "$ref": "#/$defs/plotErrorType"
+            }
+          },
+          "overallRationale": {
+            "type": "string"
+          }
+        },
+        "required": [
+          "factualAlignment",
+          "premiseCoverage",
+          "conciseness",
+          "hallucinationControl",
+          "overall",
+          "rationale",
+          "errorTypes",
+          "overallRationale"
+        ],
+        "additionalProperties": false
+      },
+      "synopsisEvaluation": {
+        "type": "object",
+        "properties": {
+          "eventCoverage": {
+            "$ref": "#/$defs/score"
+          },
+          "causalCoherence": {
+            "$ref": "#/$defs/score"
+          },
+          "characterMotivation": {
+            "$ref": "#/$defs/score"
+          },
+          "resolutionAccuracy": {
+            "$ref": "#/$defs/score"
+          },
+          "faithfulness": {
+            "$ref": "#/$defs/score"
+          },
+          "overall": {
+            "$ref": "#/$defs/score"
+          },
+          "rationale": {
+            "type": "string"
+          },
+          "errorTypes": {
+            "type": "array",
+            "items": {
+              "$ref": "#/$defs/synopsisErrorType"
+            }
+          },
+          "overallRationale": {
+            "type": "string"
+          }
+        },
+        "required": [
+          "eventCoverage",
+          "causalCoherence",
+          "characterMotivation",
+          "resolutionAccuracy",
+          "faithfulness",
+          "overall",
+          "rationale",
+          "errorTypes",
+          "overallRationale"
+        ],
+        "additionalProperties": false
+      },
+      "keyMessageEvaluation": {
+        "type": "object",
+        "properties": {
+          "semanticAlignment": {
+            "$ref": "#/$defs/score"
+          },
+          "thematicSpecificity": {
+            "$ref": "#/$defs/score"
+          },
+          "messageNotPlot": {
+            "$ref": "#/$defs/score"
+          },
+          "faithfulness": {
+            "$ref": "#/$defs/score"
+          },
+          "overall": {
+            "$ref": "#/$defs/score"
+          },
+          "rationale": {
+            "type": "string"
+          },
+          "errorTypes": {
+            "type": "array",
+            "items": {
+              "$ref": "#/$defs/keyMessageErrorType"
+            }
+          },
+          "overallRationale": {
+            "type": "string"
+          }
+        },
+        "required": [
+          "semanticAlignment",
+          "thematicSpecificity",
+          "messageNotPlot",
+          "faithfulness",
+          "overall",
+          "rationale",
+          "errorTypes",
+          "overallRationale"
+        ],
+        "additionalProperties": false
+      }
+    }
+  }
+}

@@ -1,0 +1,64 @@
+{
+  "name": "cinesubbench_language_content_assessment_output",
+  "strict": true,
+  "schema": {
+    "type": "object",
+    "properties": {
+      "id": {
+        "type": "integer"
+      },
+      "strongProfanityCount": {
+        "type": "integer",
+        "minimum": 0
+      },
+      "strongProfanityIndices": {
+        "type": "array",
+        "items": {
+          "type": "integer"
+        }
+      },
+      "crudeBodilyLanguageCount": {
+        "type": "integer",
+        "minimum": 0
+      },
+      "crudeBodilyLanguageIndices": {
+        "type": "array",
+        "items": {
+          "type": "integer"
+        }
+      },
+      "mildObscenityCount": {
+        "type": "integer",
+        "minimum": 0
+      },
+      "mildObscenityIndices": {
+        "type": "array",
+        "items": {
+          "type": "integer"
+        }
+      },
+      "religiousProfanityAndExclamationCount": {
+        "type": "integer",
+        "minimum": 0
+      },
+      "religiousProfanityAndExclamationIndices": {
+        "type": "array",
+        "items": {
+          "type": "integer"
+        }
+      }
+    },
+    "required": [
+      "id",
+      "strongProfanityCount",
+      "strongProfanityIndices",
+      "crudeBodilyLanguageCount",
+      "crudeBodilyLanguageIndices",
+      "mildObscenityCount",
+      "mildObscenityIndices",
+      "religiousProfanityAndExclamationCount",
+      "religiousProfanityAndExclamationIndices"
+    ],
+    "additionalProperties": false
+  }
+}

@@ -1,0 +1,50 @@
+{
+  "name": "cinesubbench_cultural_prediction_output",
+  "strict": true,
+  "schema": {
+    "type": "object",
+    "properties": {
+      "id": {
+        "type": "integer"
+      },
+      "ageSuitabilityPrediction": {
+        "type": "object",
+        "properties": {
+          "ageRating": {
+            "type": "string",
+            "enum": ["2+", "3+", "4+", "5+", "6+", "7+", "8+", "9+", "10+", "11+", "12+", "13+", "14+", "15+", "16+", "17+", "18+"]
+          },
+          "rationale": {
+            "type": "string"
+          }
+        },
+        "required": ["ageRating", "rationale"],
+        "additionalProperties": false
+      },
+      "countryMotionPictureRatingPrediction": {
+        "type": "array",
+        "minItems": 10,
+        "maxItems": 10,
+        "items": {
+          "type": "object",
+          "properties": {
+            "country": {
+              "type": "string",
+              "enum": ["Australia", "Brazil", "France", "Germany", "Netherlands", "Singapore", "South Korea", "Sweden", "United Kingdom", "United States"]
+            },
+            "rating": {
+              "type": "string"
+            },
+            "rationale": {
+              "type": "string"
+            }
+          },
+          "required": ["country", "rating", "rationale"],
+          "additionalProperties": false
+        }
+      }
+    },
+    "required": ["id", "ageSuitabilityPrediction", "countryMotionPictureRatingPrediction"],
+    "additionalProperties": false
+  }
+}

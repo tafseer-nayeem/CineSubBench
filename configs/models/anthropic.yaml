@@ -1,0 +1,12 @@
+name: Claude Haiku 4.5
+provider: anthropic
+model_id: claude-haiku-4-5
+credentials:
+  env_var: ANTHROPIC_API_KEY
+execution:
+  mode: batch
+  batch_size: 100
+  workers: 1
+  timeout_seconds: 300
+  max_retries: 3
+

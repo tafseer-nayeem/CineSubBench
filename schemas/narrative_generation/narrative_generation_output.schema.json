@@ -1,0 +1,66 @@
+{
+  "name": "cinesubbench_narrative_generation_output",
+  "strict": true,
+  "schema": {
+    "type": "object",
+    "properties": {
+      "id": {
+        "type": "integer",
+        "description": "CineSubBench sample id."
+      },
+      "plot": {
+        "type": "string",
+        "description": "Concise premise-level plot description."
+      },
+      "synopsis": {
+        "type": "string",
+        "description": "Fuller spoiler-aware synopsis covering the central narrative arc."
+      },
+      "keyMessage": {
+        "type": "string",
+        "description": "Concise thematic or positive-message takeaway."
+      },
+      "genres": {
+        "type": "array",
+        "description": "One to four predicted genres from the allowed label set.",
+        "minItems": 1,
+        "maxItems": 4,
+        "items": {
+          "type": "string",
+          "enum": [
+            "Action",
+            "Adventure",
+            "Animation",
+            "Biography",
+            "Comedy",
+            "Crime",
+            "Documentary",
+            "Drama",
+            "Family",
+            "Fantasy",
+            "Film-Noir",
+            "History",
+            "Horror",
+            "Music",
+            "Musical",
+            "Mystery",
+            "Romance",
+            "Sci-Fi",
+            "Sport",
+            "Thriller",
+            "War",
+            "Western"
+          ]
+        }
+      }
+    },
+    "required": [
+      "id",
+      "plot",
+      "synopsis",
+      "keyMessage",
+      "genres"
+    ],
+    "additionalProperties": false
+  }
+}
