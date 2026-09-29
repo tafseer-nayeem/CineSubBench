@@ -2,7 +2,7 @@
 
 CineSubBench evaluates whether language models can reconstruct a film's story and make culturally situated judgments from film-length subtitles. Its 1,012 films have complete coverage in six subtitle languages and ten national motion-picture rating systems: 6,072 tracks and 8.13 million timestamped entries. The same films support matched comparisons across tasks, languages, and countries.
 
-<p align="center"><a href="assets/figure1_overview.jpg"><img src="assets/figure1_overview.jpg" alt="Figure 1. CineSubBench overview: film-length subtitle input, six languages, and seven narrative and cultural tasks." width="780"></a></p>
+<p align="center"><a href="assets/figure1_overview.jpg"><img src="assets/figure1_overview.jpg" alt="Figure 1. CineSubBench overview: film-length subtitle input, six languages, and seven narrative and cultural tasks." width="680"></a></p>
 
 *Figure 1. Overview of CineSubBench. The same 1,012 films support matched multi-task, multilingual, and multicultural evaluation.*
 
