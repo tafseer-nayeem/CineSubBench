@@ -16,7 +16,7 @@ Subtitle timestamps preserve order, but do not identify speakers, scenes, events
 The first six tasks can be compared across subtitle languages; language-safety evidence is evaluated on the English track. This repository contains the evaluation code, OpenAI/Gemini/Anthropic adapters, prompts, schemas, and a 20-film sample. The complete dataset is on Hugging Face.
 
 ## Dataset
-<p><a href="https://huggingface.co/datasets/tafseer-nayeem/CineSubBench"><img src="https://huggingface.co/front/assets/huggingface_logo-noborder.svg" alt="Hugging Face" height="20" align="center"> <strong>tafseer-nayeem/CineSubBench</strong></a> · Complete dataset on Hugging Face</p>
+<p><a href="https://huggingface.co/datasets/tafseer-nayeem/CineSubBench"><img src="https://huggingface.co/front/assets/huggingface_logo-noborder.svg" alt="Hugging Face" height="16" align="center"> <strong>tafseer-nayeem/CineSubBench</strong></a> · Complete dataset on Hugging Face</p>
 
 Load the complete benchmark directly from Hugging Face:
 
