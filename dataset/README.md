@@ -30,7 +30,7 @@ This Hub URI is the default dataset source for `doctor`, `prepare`, `run`, and `
 
 ## Construction and quality assurance
 
-<p align="center"><a href="assets/figure2_construction.jpg"><img src="assets/figure2_construction.jpg" alt="CineSubBench construction and quality-assurance pipeline" width="580"></a></p>
+<p align="center"><a href="assets/figure2_construction.jpg"><img src="assets/figure2_construction.jpg" alt="CineSubBench construction and quality-assurance pipeline" width="680"></a></p>
 
 *Figure 2. Cross-source film linking and progressive filtering are followed by complete-coverage optimization, subtitle verification, and task-specific reference curation. Click to inspect the full-size figure.*
 
